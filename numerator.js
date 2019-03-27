@@ -1,4 +1,6 @@
-function next(number = 0, expand = false) {
+const numerator = module.exports = {};
+
+numerator.next = function(number = 0, expand = false) {
 
   let prev = number.toString();
 
@@ -30,9 +32,3 @@ function next(number = 0, expand = false) {
 
   return next;
 }
-
-module.exports = next;
-
-console.log(next("D999", true));
-const assert = require("assert");
-assert.equal(next("MAX999", true), "MAX1000");
