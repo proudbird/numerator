@@ -2,19 +2,19 @@
   "name": "numerator",
   "description": "Auto incrementing serial numbers, containing non-digit symbols.",
   "version": "0.0.1",
-  "homepage": "http://github.com/proudbird/serial-numbering",
+  "homepage": "http://github.com/proudbird/numerator",
   "author": "Max Orloxv <proudbird.mail@mail.com>",
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "http://github.com/proudbird/serial-numbering.git"
+    "url": "http://github.com/proudbird/numerator.git"
   },
   "scripts": {
     "test": "mocha"
   },  
   "bugs": {
     "mail": "proudbird.mail@mail.com",
-    "web": "http://github.com/proudbird/serial-numbering/issues"
+    "web": "http://github.com/proudbird/numerator/issues"
   },
   "main": "index",
   "engines": {
@@ -23,7 +23,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/proudbird/serial-numbering/raw/master/LICENSE"
+      "url": "http://github.com/proudbird/numerator/LICENSE"
     }
   ],
   "devDependencies": {
