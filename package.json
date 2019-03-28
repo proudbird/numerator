@@ -12,10 +12,6 @@
   "scripts": {
     "test": "node test.js"
   },
-  "bugs": {
-    "mail": "proudbird.mail@mail.com",
-    "web": "http://github.com/proudbird/numerator/issues"
-  },
   "main": "numerator",
   "engines": {
     "node": ">=0.2.0"
