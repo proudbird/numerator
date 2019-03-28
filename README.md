@@ -52,4 +52,4 @@ npm test
 
 ## License
 
-[MIT licensed](./LICENSE)
+[MIT](./LICENSE)
