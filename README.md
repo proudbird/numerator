@@ -38,8 +38,8 @@ Generates and returns next number based on given number
 
 #### Arguments
 
-* `num` - (String | Number) A number, that must be icremented
-* `expand` - (Boolen) Optional: `true`, if we want to expand number template (to increase its lenght) in case, when quantity of digits of the number must be increased; by default it is `false`
+* `num` - (string | number) A number, that must be icremented
+* `expand` - (boolen) optional; `true`, if we want to expand number template (to increase its lenght) in case, when quantity of digits of the number must be increased; by default it is `false`
 
 #### Returns 
 `number` - result of inrementing
@@ -52,4 +52,4 @@ npm test
 
 ## License
 
-MIT(https://github.com/proudbird/numerator/blob/master/LICENSE)
+[MIT](https://github.com/proudbird/numerator/blob/master/LICENSE)
