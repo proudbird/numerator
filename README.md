@@ -1,7 +1,9 @@
 
-# numerator [![Build Status](http://github.com/proudbird/numerator)] #
+# numerator #
 
 A simple script, that increments serial numbers, containing non-digit symbols
+
+Useful for numbering documents, catalogs, users and etc.
 
 ## Quickstart
 
@@ -30,22 +32,24 @@ numerator.next('USER-99', true); // ⇨ 'USER-100'
 
 ## API
 
-```javascript
-const numerator = require('numerator');
+### next(num, [expand])
 
-// Incantations
-numerator.next(number, expand);
-```
+Generates and returns next number based on given number
 
-Generate and return next number based on given number.
+#### Arguments
 
-* `number` - (String | Number) A number, that must be icremented
-* `expand` - (Boolen) `true`, if we want to expand number template (to increase its lenght) in case, when quantity of digits of the number must be increased; by default it is `false`
+* `num` - (String | Number) A number, that must be icremented
+* `expand` - (Boolen) Optional: `true`, if we want to expand number template (to increase its lenght) in case, when quantity of digits of the number must be increased; by default it is `false`
 
-Returns `number`
+#### Returns 
+`number` - result of inrementing
 
 ## Testing
 
 ```shell
 npm test
 ```
+
+## License
+
+[MIT] (http://github.com/proudbird/numerator/LICENSE)
