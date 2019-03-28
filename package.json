@@ -1,7 +1,7 @@
 {
   "name": "numerator",
   "description": "Auto incrementing serial numbers, containing non-digit symbols.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://github.com/proudbird/numerator",
   "author": "Max Orloxv <proudbird.mail@mail.com>",
   "contributors": [],
@@ -17,5 +17,12 @@
     "node": ">=0.2.0"
   },
   "license": "MIT",
-  "keywords": ["increment", "numbering", "autonumbering", "numerate", "sequence", "progression"]
+  "keywords": [
+    "increment",
+    "numbering",
+    "autonumbering",
+    "numerate",
+    "sequence",
+    "progression"
+  ]
 }
