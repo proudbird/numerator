@@ -10,7 +10,7 @@
     "url": "http://github.com/proudbird/numerator.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "node test.js"
   },
   "bugs": {
     "mail": "proudbird.mail@mail.com",
@@ -20,8 +20,5 @@
   "engines": {
     "node": ">=0.2.0"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "mocha": "^6.0.2"
-  }
+  "license": "MIT"
 }

@@ -2,33 +2,33 @@ const numerator = module.exports = {};
 
 numerator.next = function(number = 0, expand = false) {
 
-  let prev = number.toString();
+  number = number.toString();
 
-  let numberLength = prev.length;
-  const nonDigits = prev.toString().replace(/(\d)/g, "");
-  const lastNonDigit = nonDigits.slice(-1);
-  const index = prev.lastIndexOf(lastNonDigit);
+  let next   = 0;
+  let index  = -1;
+  let prefix = number;
+  let length = number.length;
 
-  if(nonDigits && index === numberLength-1) {
-    throw new TypeError("[Numerator] Invalid argument: parameter 'number' must end with digit");
+  const filter = new RegExp('(\\d+$)');
+  const match  = number.match(filter);
+  
+  if(match) {
+    index  = number.lastIndexOf(match[1]);
+    prefix = number.substring(0, index);
+    next   = parseInt(match[1]);
   }
 
-  const lastDigits = prev.slice(index + 1) || prev;
-  const prefix = prev.substring(0, index + 1);
-
-  prev = parseInt(lastDigits);
-
-  let next = prev + 1;
+  next = next + 1;
   
-  if((prefix + next).length > numberLength) {
+  if((prefix + next).length > length) {
     if(expand) {
-      numberLength++;
+      length++;
     } else {
-      throw new TypeError("[Numerator] Invalid argument: parameter 'number' achieved its maximum");
+      throw new Error("[Numerator] Parameter 'number' achieved its maximum");
     }
   }
 
-  next = next.toString().padStart(numberLength, prefix + "0000000000000000000000000000000000000");
+  next = next.toString().padStart(length, prefix + "0000000000000000000000000000000000000");
 
   return next;
 }

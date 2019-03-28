@@ -17,8 +17,14 @@ const numerator = require('numerator');
 // ... start numeration from begining with given template
 numerator.next('IN/2019/000'); // ⇨ 'IN/2019/001'
 
-// ... or get next of the given number
+// ... or to get next of the given number
 numerator.next('IN/2019/056'); // ⇨ 'IN/2019/057'
+
+// ... to get first number with only given prefix
+numerator.next('USER-', true); // ⇨ 'USER-1'
+
+// ... or to get next number with expanding template
+numerator.next('USER-99', true); // ⇨ 'USER-100'
 
 ```
 
@@ -28,16 +34,16 @@ numerator.next('IN/2019/056'); // ⇨ 'IN/2019/057'
 const numerator = require('numerator');
 
 // Incantations
-next(number);
+numerator.next(number, expand);
 ```
 
 Generate and return next number based on given number.
 
 * `number` - (String | Number) A number, that must be icremented
+* `expand` - (Boolen) `true`, if we want to expand number template (to increase its lenght) in case, when quantity of digits of the number must be increased; by default it is `false`
 
 Returns `number`
 
-```
 ## Testing
 
 ```shell
