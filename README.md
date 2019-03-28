@@ -41,6 +41,8 @@ Generates and returns next number based on given number
 * `num` - (string | number) A number, that must be icremented
 * `expand` - (boolen) optional; `true`, if we want to expand number template (to increase its lenght) in case, when quantity of digits of the number must be increased; by default it is `false`
 
+Note: if you pass "USER-99" as `num` and `expand` is `false`, it will throw Error (not returns "USER-100"), so if you need "USER-100", `expand` mast be `true`
+
 #### Returns 
 `number` - result of inrementing
 
