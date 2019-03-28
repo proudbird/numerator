@@ -52,4 +52,4 @@ npm test
 
 ## License
 
-[MIT] (http://github.com/proudbird/numerator/LICENSE)
+MIT(https://github.com/proudbird/numerator/blob/master/LICENSE)
